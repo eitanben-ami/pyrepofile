@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrepofile"
+version = "0.1.0"
+description = "Scan local directories and summarize repositories by their manifest files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Eitan Ben-Ami" }
+]
+keywords = ["repository", "manifest", "scanner"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pyrepofile = "pyrepofile.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eitanben-ami/pyrepofile"
+Repository = "https://github.com/eitanben-ami/pyrepofile"
+Issues = "https://github.com/eitanben-ami/pyrepofile/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyrepofile*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
