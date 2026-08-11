@@ -44,3 +44,5 @@ pyrepofile discover /path/to/workspace --limit 20 --format json
 ## Tags
 
 `python` `cli` `scanner` `manifest` `developer-tools`
+
+[Source on GitHub](https://github.com/eitanben-ami/pyrepofile)
