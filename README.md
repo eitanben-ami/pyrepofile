@@ -1,12 +1,12 @@
 # pyrepofile
 
+Scan local directories and summarize projects by their manifest files.
+
 <p align="left">
   <img src="https://img.shields.io/badge/python-3.9%2B-blue" alt="Python" />
   <img src="https://img.shields.io/badge/status-stable-green" alt="Status" />
   <img src="https://img.shields.io/badge/cli-repo%20scan-green" alt="CLI" />
 </p>
-
-Scan local directories and summarize projects by their manifest files.
 
 ## About
 
@@ -20,7 +20,7 @@ and counts for scripting, review, or CI triage.
 - Discover repositories under a root directory.
 - Classify language by recognized manifest files.
 - Text, JSON, and Markdown output formats.
-- Editable `src/` layout install.
+- Editable install.
 
 ## Installation
 
@@ -37,12 +37,12 @@ pyrepofile discover /path/to/workspace --limit 20 --format json
 
 ## Project structure
 
-- `src/pyrepofile/` — package code.
+- `pyrepofile/` — package code.
 - `tests/` — ad-hoc verification tests.
 - `docs/` — usage notes.
 
-## Tags
+## License
 
-`python` `cli` `scanner` `manifest` `developer-tools`
+MIT
 
 [Source on GitHub](https://github.com/eitanben-ami/pyrepofile)
