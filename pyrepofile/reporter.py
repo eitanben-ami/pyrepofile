@@ -50,7 +50,7 @@ def render_report(repos: List[RepoInfo], fmt: str = "text") -> str:
         return json.dumps({"repositories": payload, "count": len(payload)}, indent=2)
 
     if fmt == "markdown":
-        sections = [f"# Repository scan", "", f"Found {len(repos)} repository{'ies' if len(repos) != 1 else ''}.", ""]
+        sections = [f"# Repository scan", "", f"Found {len(repos)} repositor{'ies' if len(repos) != 1 else 'y'}.", ""]
         for repo in repos:
             sections.append(f"## {repo.name}")
             sections.append("")
@@ -64,7 +64,7 @@ def render_report(repos: List[RepoInfo], fmt: str = "text") -> str:
             sections.append("")
         return "\n".join(sections).rstrip() + "\n"
 
-    blocks: List[str] = [f"Found {len(repos)} repository{'ies' if len(repos) != 1 else ''}:"]
+    blocks: List[str] = [f"Found {len(repos)} repositor{'ies' if len(repos) != 1 else 'y'}"]
     for index, repo in enumerate(repos, start=1):
         lines = [f"[{index}] {repo.name}", f"     path       : {repo.path}"]
         if repo.language:
