@@ -14,6 +14,9 @@ build/
 AGENTS.md
 CLAUDE.md
 coverage/
+*.log
+.htmlcov
+
 *.db
 .dev.db
 node_modules

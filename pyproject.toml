@@ -30,6 +30,12 @@ Homepage = "https://github.com/eitanben-ami/pyrepofile"
 Repository = "https://github.com/eitanben-ami/pyrepofile"
 Issues = "https://github.com/eitanben-ami/pyrepofile/issues"
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "ruff>=0.1.0",
+]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pyrepofile*"]
